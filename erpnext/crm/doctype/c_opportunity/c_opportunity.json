@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:d_name",
+ "creation": "2024-02-17 10:06:52.435055",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "status",
+  "column_break_krsy",
+  "mob",
+  "email",
+  "lead_id",
+  "source",
+  "d_name",
+  "section_break_zulr",
+  "course",
+  "section_break_tomi",
+  "course_fee",
+  "address",
+  "city",
+  "column_break_byfx",
+  "payment_amount",
+  "gender"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "OPPORTUNITY",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "LEAD\nOPPORTUNITY\nCONVERTED\nLOST",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_krsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mob",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email Id "
+  },
+  {
+   "bold": 1,
+   "fieldname": "lead_id",
+   "fieldtype": "Link",
+   "label": "Lead ",
+   "options": "C_Lead"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "d_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "d_name",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_zulr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Course",
+   "options": "Program Enrollment Course"
+  },
+  {
+   "fieldname": "section_break_tomi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_fee",
+   "fieldtype": "Data",
+   "label": "Course Fee",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_byfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Data",
+   "label": "Payment ",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-20 12:39:22.664506",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "C_opportunity",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "CONVERTED"
+  },
+  {
+   "color": "Red",
+   "title": "LEAD"
+  },
+  {
+   "color": "Yellow",
+   "title": "OPPORTUNITY"
+  },
+  {
+   "color": "Gray",
+   "title": "LOST"
+  }
+ ]
+}

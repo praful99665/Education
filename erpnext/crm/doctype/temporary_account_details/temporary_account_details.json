@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_course",
+ "creation": "2024-02-05 15:21:12.719718",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_course",
+  "custom_course_1",
+  "custom_start_year",
+  "just1"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_course",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Course",
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_course_1",
+   "fieldtype": "Data",
+   "label": "Course",
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_start_year",
+   "fieldtype": "Date",
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "just1",
+   "fieldtype": "Table",
+   "label": "just",
+   "options": "just1",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-20 12:53:39.569150",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Temporary Account Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
